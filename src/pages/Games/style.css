@@ -1,0 +1,21 @@
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5rem;
+    justify-content: space-between;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.page p {
+    border: 2px solid #fff;
+    border-radius: 12px;
+    padding: .5rem 1rem;
+    font-size: 2rem;
+    color: #fff;
+}

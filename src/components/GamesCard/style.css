@@ -1,0 +1,96 @@
+.game {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.433);
+    margin: 2rem auto;
+    border-radius: 12px;
+    width: 17%;
+    height: 36rem;
+}
+
+
+.game img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-width: 100%;
+    min-height: 16rem;
+}
+
+.game h2,
+.game span {
+    text-align: center;
+    margin-top: 0.8rem;
+    color: #fff;
+}
+
+
+.game a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem;
+    background-color: #f7d354;
+    color: #000;
+    border-radius: 5px;
+    margin-top: 3rem;
+    cursor: pointer;
+}
+
+
+.game a:hover {
+    background-color: blueviolet;
+}
+
+.game svg {
+    color: #f7d354;
+}
+
+@media screen and (max-width: 500px) {
+    .game {
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.433);
+        margin: 2rem auto;
+        border-radius: 12px;
+        width: 100%;
+        height: 36rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .game {
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.433);
+        margin: 2rem auto;
+        border-radius: 12px;
+        width: 100%;
+        height: 36rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .game {
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.433);
+        margin: 2rem auto;
+        border-radius: 12px;
+        width: 100%;
+        height: 36rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .game {
+        align-items: center;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.433);
+        margin: 2rem auto;
+        border-radius: 12px;
+        width: 78%;
+        height: 38rem;
+    }
+}
+

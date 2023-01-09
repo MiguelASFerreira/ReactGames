@@ -1,0 +1,38 @@
+.search .title {
+    text-align: center;
+    margin: 1rem 0;
+    color: #fff;
+}
+
+.title .query-text {
+    font-weight: bold;
+}
+.games-search {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 500px) {
+    .games-search .game {
+       width: 70%; 
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .games-search .game {
+       width: 70%; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .games-search .game {
+       width: 70%; 
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .games-search .game {
+       width: 70%; 
+    }
+}

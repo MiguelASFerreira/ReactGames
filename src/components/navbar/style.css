@@ -1,0 +1,58 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+    padding: 1rem 2rem;
+    min-width: 100%;
+}
+
+.navbar-text {
+    margin: auto 1rem;
+}
+
+.navbar-text a{
+    color: #fff;
+    transition: .5s;
+}
+
+.navbar-text a:hover {
+    color: rebeccapurple;
+  }
+  
+form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+input {
+    padding: 1rem 2rem;
+    margin: 0.8rem 0;
+    border-radius: 4px;
+    border: none;
+}
+
+button {
+    margin: 1rem;
+    padding: 0 .4rem;
+    background-color: #f7d354;
+    border: 2px solid #f7d354;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 500px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        background-color: #000;
+        padding: 1rem 2rem;
+        min-width: 495px;
+    }
+}

@@ -1,0 +1,38 @@
+.footer { 
+    background-color: black;
+    padding: 1rem;
+    height: 7rem;
+    color: white;
+    text-align: center;
+    border-top: 1px solid #333;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.links li {
+    margin: 1rem 1rem;
+}
+
+.links svg {
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.links svg:hover {
+    color: blueviolet;
+}
+
+.copy {
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+}

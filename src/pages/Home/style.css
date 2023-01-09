@@ -1,0 +1,21 @@
+.game-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 5rem;
+}
+
+
+.title-game {
+    text-align: center;
+    color: #fff;
+    margin: 1rem 0;
+}
+
+
+@media screen and (max-width: 500px) {
+    .game-grid {
+        flex-direction: column;
+        margin: 0 5rem;
+    }
+}
+

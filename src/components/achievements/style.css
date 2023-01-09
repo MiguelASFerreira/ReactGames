@@ -1,0 +1,56 @@
+.card-achievements  {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.433);
+    margin: 2rem auto;
+    border-radius: 12px;
+    width: 30%;
+}
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.achievements img{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.achievements h3,
+.achievements p,
+.achievements span {
+    text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+    .card-achievements  {
+        background-color: rgba(0, 0, 0, 0.433);
+        margin: 2rem auto;
+        border-radius: 12px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .card-achievements  {
+        background-color: rgba(0, 0, 0, 0.433);
+        margin: 2rem auto;
+        border-radius: 12px;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .card-achievements  {
+        background-color: rgba(0, 0, 0, 0.433);
+        margin: 2rem auto;
+        border-radius: 12px;
+        width: 23%;
+    }
+}
