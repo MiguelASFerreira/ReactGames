@@ -5,10 +5,12 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import App from './App'
 
 import './index.css'
+
 import Home from './pages/Home'
 import Games from './pages/Games'
 import DetailsGame from './pages/DetailsGame'
 import Search from './components/Search'
+
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
@@ -22,5 +24,5 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         </Route>
       </Routes>
     </Router>
-  </React.StrictMode>,
+  </React.StrictMode>
 )

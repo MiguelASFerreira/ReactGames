@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
-
 import { useParams } from "react-router-dom"
 
-const api = import.meta.env.VITE_API;
+const apiKey = import.meta.env.VITE_API;
 
 import "./style.css"
 import GamesCard from '../../components/GamesCard';
@@ -50,19 +49,19 @@ function DetailsGame() {
   }
 
   useEffect(() => {
-    const detailGame = `https://api.rawg.io/api/games/${id}?key=${api}`;
+    const detailGame = `https://api.rawg.io/api/games/${id}?key=${apiKey}`;
 
     getGameDetails(detailGame)
   }, [])
 
   useEffect(() => {
-    const conqGame = `https://api.rawg.io/api/games/${id}/achievements?key=${api}&page=${page}`
+    const conqGame = `https://api.rawg.io/api/games/${id}/achievements?key=${apiKey}&page=${page}`
 
     getGameAchievements(conqGame)
   }, [page])
 
   useEffect(() => {
-    const screenGame = `https://api.rawg.io/api/games/${id}/screenshots?key=${api}`;
+    const screenGame = `https://api.rawg.io/api/games/${id}/screenshots?key=${apiKey}`;
 
     getScreenShot(screenGame)
   }, [])
@@ -73,7 +72,7 @@ function DetailsGame() {
       <div className='DetailsGame'>
         {game &&
           <>
-            <GamesCard key={game.id} game={game} showLink={false} />
+            <GamesCard key={game.id} showLink={false} game={game}  />
             <div className='Details'>
               <div className="info">
                 <h3>Data de Lançamento</h3>
@@ -81,13 +80,13 @@ function DetailsGame() {
               </div>
               <div className="info">
                 <h3>Website</h3>
-                <a href={game.website ? game.website : "Não há link para o site"}>Ir para o site</a>
+                <a key={game.id} href={game.website}>Ir para o site</a>
               </div>
               <div className="info">
                 <h3>Genêros</h3>
                 <div className="genres">
                   {game.genres?.map((genero) => (
-                    <span key={genero.id} className="item">{genero.name ? genero.name : "Não há genêros"}</span>
+                    <span key={genero.id} className="item">{genero.name}</span>
                   ))}
                 </div>
               </div>
@@ -95,21 +94,21 @@ function DetailsGame() {
                 <h3>Plataformas</h3>
                 <div className="plataform">
                   {game.platforms?.map((plataforma) => (
-                    <p key={plataforma.id} className="item-plataform">{plataforma.platform.name ? plataforma.platform.name : "Não há plataformas"}</p>
+                    <p key={plataforma.id} className="item-plataform">{plataforma.platform.name}</p>
                   ))}
                 </div>
               </div>
               <div className="info ">
                 <h3>Descrição</h3>
                 <div className="description">
-                  <p>{game.description_raw}</p>
+                  <p key={game.id}>{game.description_raw}</p>
                 </div>
               </div>
               <div className="info">
                 <h3>Tags</h3>
                 <div className="tags">
                   {game.tags?.map((tags) => (
-                    <p key={tags.id} className="item-tags">{tags.name ? tags.name : "Não há tags"}</p>
+                    <p key={tags.id} className="item-tags">{tags.name}</p>
                   ))}
                 </div>
               </div>
@@ -117,7 +116,7 @@ function DetailsGame() {
                 <h3>Lojas</h3>
                 <div className="lojas">
                   {game.stores?.map((lojas) => (
-                    <a href={lojas.store.domain ? lojas.store.domain : "Não há link para o domínio"} key={lojas.id} className="item-store">{lojas.store.name}</a>
+                    <a href={lojas.store.domain} key={lojas.id} className="item-store">{lojas.store.name}</a>
                   ))}
                 </div>
               </div>

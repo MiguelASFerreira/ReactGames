@@ -5,9 +5,11 @@ import { useSearchParams } from 'react-router-dom';
 import GamesCard from '../GamesCard';
 import Loading from '../Loader';
 
+
+const apiKey = import.meta.env.VITE_API;
+
 import "./style.css"
 
-const api = import.meta.env.VITE_API;
 
 const Search = () => {
     var btnPrev = document.querySelector(".back-to-top");
@@ -29,13 +31,13 @@ const Search = () => {
 
     const query = searchParams.get("q");
 
-    const getSearchGames = async (url) => {
+    const getSearchGames = async (url: RequestInfo | URL) => {
         const res = await fetch(url);
         const data = await res.json();
         setGames(data.results)
     };
     useEffect(() => {
-        const searchWithQueryURL = `https://api.rawg.io/api/games?key=${api}&search=${query}&page=${page}`;
+        const searchWithQueryURL = `https://api.rawg.io/api/games?key=${apiKey}&search=${query}&page=${page}`;
 
         getSearchGames(searchWithQueryURL);
 

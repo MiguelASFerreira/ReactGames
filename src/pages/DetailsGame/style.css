@@ -39,7 +39,8 @@
 .tags,
 .publishers,
 .plataform,
-.conq {
+.conq,
+.lojas {
     display: flex;
     flex-wrap: wrap;
 }
@@ -56,26 +57,25 @@
     background-color: rgba(0, 0, 0, 0.364);
     padding: 10px;
     border-radius: 12px;
-    margin: 0 4px;
+    margin: 4px;
+}
+
+.item-store {
+    background-color: rgba(0, 0, 0, 0.364);
+    padding: 10px;
+    border-radius: 12px;
+    margin: 4px;
 }
 
 .item-store:hover {
     color: blueviolet;
 }
 
-
-.item-store {
-    background-color: rgba(0, 0, 0, 0.364);
-    padding: 10px;
-    border-radius: 12px;
-    margin: 0 4px;
-}
-
 .item-publishers{
     background-color: rgba(0, 0, 0, 0.364);
     padding: 10px;
     border-radius: 12px;
-    margin: 0 4px;
+    margin: 4px;
 }
 
 .item-plataform {

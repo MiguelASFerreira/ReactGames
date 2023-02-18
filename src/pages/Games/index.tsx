@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from 'react'
-
-import { Link } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 
 import GamesCard from '../../components/GamesCard';
 import Loading from '../../components/Loader';
 
+
+const apiKey = import.meta.env.VITE_API;
+
 import "./style.css"
 
-const api = import.meta.env.VITE_API;
 
 function Games() {
   var btnPrev = document.querySelector(".back-to-top");
@@ -35,7 +35,7 @@ function Games() {
 
 
   useEffect(() => {
-    const gameUrl = `https://api.rawg.io/api/games?key=${api}&page=${page}`;
+    const gameUrl = `https://api.rawg.io/api/games?key=${apiKey}&page=${page}`;
     getGames(gameUrl)
   }, [page])
 

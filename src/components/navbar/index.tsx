@@ -21,8 +21,10 @@ function Navbar() {
 
     return (
         <div className='navbar'>
-            <h3 className='navbar-text'>
-                <Link to="/">Home</Link>
+            <h3>
+                <Link to="/">
+                    <img src="https://dewey.tailorbrands.com/production/brand_version_mockup_image/45/8126884045_cd09e7ab-cb0d-4d1e-800b-58b7a9dd3e47.png?cb=1676141490" alt="Games" width={150} />
+                </Link>
             </h3>
 
             <form onSubmit={handleSubmit}>

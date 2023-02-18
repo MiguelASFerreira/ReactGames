@@ -4,12 +4,9 @@ import "./style.css"
 
 const Loading = () => {
   return (
-    <div
-      className='loading-overlay'
-      data-test-id='loading'
-    >
-      Carregando...
-    </div>
+        <div className='loading-overlay'>
+          <div className="loader" />
+        </div>
   )
 }
 
